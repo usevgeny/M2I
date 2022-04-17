@@ -1,0 +1,10 @@
+CREATE TABLE Employee
+(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nom VARCHAR(15) NOT NULL,
+prenom VARCHAR(20) NOT NULL,
+anneedenaissance INT NOT NULL,
+fonction VARCHAR(15),
+addresse VARCHAR(100),
+email VARCHAR(50) NOT NULL
+);

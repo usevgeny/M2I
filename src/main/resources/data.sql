@@ -1,0 +1,2 @@
+INSERT INTO Employee(id, nom,prenom, anneedenaissance,fonction,addresse,email) 
+VALUES(1,'Charly', 'Jules',2000,'Directeur','75001 Paris', 'Julescharles@yahoo.com'),(2,'Assya', 'Jules',1989,'CEO','', 'test@yahoo.com');
