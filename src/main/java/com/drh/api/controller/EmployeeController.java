@@ -20,12 +20,19 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.drh.api.Model.Employee;
 import com.drh.api.Model.service.EmployeeService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+
 @RestController
+@Api("Les informations d'accompagneemnt pour ce controlleur/ ceci est le documentation sur la ressource employee")
 public class EmployeeController {
 
 	@Autowired
 	EmployeeService employeeService;
 
+	@ApiOperation(value = "il renvoie tous les employes" )
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees(){
 		System.out.println("LIST DES EMPLOYEES : "+employeeService.getlistemployee());
